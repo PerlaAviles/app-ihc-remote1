@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header and Footer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Personalización adicional de estilos */
+    body {
+      padding-top: 70px; /* Ajuste para evitar que el contenido se solape con el header */
+    }
+    
+
+        .voice-control {
+            background-color: #9d0924; /* Cambio de color a azul #0381FF */
+            padding: 10px; /* Reducción del relleno */
+            border-radius: 5px; /* Reducción del radio de borde */
+            color: white; /* Letra blanca */
+        }
+
+        .footer {
+            background-color: transparent;
+        }
+        .navbar span {
+      color: white; /* Color del texto blanco */
+      font-size: 2em; /* Tamaño de la letra h1 */
+      text-align: center; /* Centrar el texto */
+    }
+    .footer span {
+      color: white; /* Color del texto */
+      font-size: 0.8em; /* Tamaño de la letra pequeño */
+      text-align: center; /* Centrar el texto */
+      display: block; /* Hacer que ocupe el ancho disponible */
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Oredenes remotas </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://perlaaviles.github.io/web-app-voicef/">Ordenes mediante comando de voz</a>
+                </li>
+            </ul>
+        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca</a>
+          </li>
+</div>
+</nav>
+
+  
+</header>
+
+  <main class="container mt-4">
+    
+    <div >
+        <p class="mb-0" style="color:black;  display: inline;">Orden generada:</p>
+        <p id="OrdenRecibida" class="mb-0" style="color:blue; font-weight: bold;">...</p>
+        <p class="mb-0" style="color:black;  display: inline;">Fecha y Hora recibida:</p>
+        <p id="Hora" class="mb-0" style="color:blue; display: inline; text-align: center;"></p>
+    </div>
+
+</main> 
+  <br><!-- Footer -->
+  <footer class="footer mt-auto py-3">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" align="center">
+      <span class="text-muted" style="text-align: center;">Todos los derechos reservados &copy; 2024</span>
+    </nav>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
+
